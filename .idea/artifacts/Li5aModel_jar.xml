@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Li5aModel:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Li5aModel_jar</output-path>
+    <root id="archive" name="Li5aModel.jar">
+      <element id="module-output" name="Li5aModel" />
+    </root>
+  </artifact>
+</component>
