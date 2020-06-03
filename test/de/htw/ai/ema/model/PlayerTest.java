@@ -16,6 +16,7 @@ public class PlayerTest {
         assertNotNull("Hand of p is null", p.getHand());
         assertNotNull("Account of p is null", p.getAccount());
         assertTrue("score wasn't set to 0", p.getTotalScore()==0);
+        assertFalse("lastCollector not false", p.isLastCollector());
     }
 
     @Test
@@ -41,5 +42,11 @@ public class PlayerTest {
     public void setTotalScore(){
         p.setTotalScore(33);
         assertTrue(p.getTotalScore()==33);
+    }
+
+    @Test
+    public void testSetCollectedLast(){
+        p.setLastCollector(true);
+        assertTrue("collectedLast attribute wasn't set correctly", p.isLastCollector());
     }
 }

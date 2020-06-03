@@ -6,12 +6,14 @@ public class Player {
     private Hand hand;
     private Account account;
     private int totalScore;
+    private boolean lastCollector;
 
     public Player(String name){
         this.name = name;
         this.hand = new Hand();
         this.account = new Account();
         this.totalScore = 0;
+        this.lastCollector = false;
     }
 
     public String getName() {
@@ -40,5 +42,13 @@ public class Player {
 
     public void setTotalScore(int totalScore) {
         this.totalScore = totalScore;
+    }
+
+    public boolean isLastCollector() {
+        return lastCollector;
+    }
+
+    public void setLastCollector(boolean lastCollector) {
+        this.lastCollector = lastCollector;
     }
 }
