@@ -1,6 +1,8 @@
 package de.htw.ai.ema.model;
 
-public class Deck {
+import java.io.Serializable;
+
+public class Deck implements Serializable {
 
     //TODO sinnvoll als Singleton?
 

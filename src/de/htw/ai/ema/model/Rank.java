@@ -1,6 +1,8 @@
 package de.htw.ai.ema.model;
 
-public enum Rank {
+import java.io.Serializable;
+
+public enum Rank implements Serializable {
     TWO,
     THREE,
     FOUR,

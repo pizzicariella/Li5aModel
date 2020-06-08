@@ -1,6 +1,8 @@
 package de.htw.ai.ema.model;
 
-public class Cycle {
+import java.io.Serializable;
+
+public class Cycle implements Serializable {
 
     private Stack stack;
     int cycleNumber;

@@ -1,9 +1,10 @@
 package de.htw.ai.ema.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stack {
+public class Stack implements Serializable {
 
     private List<Card> cards;
 

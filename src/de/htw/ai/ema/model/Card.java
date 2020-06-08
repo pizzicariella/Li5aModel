@@ -1,6 +1,8 @@
 package de.htw.ai.ema.model;
 
-public class Card {
+import java.io.Serializable;
+
+public class Card implements Serializable {
 
     private Suit suit;
     private Rank rank;

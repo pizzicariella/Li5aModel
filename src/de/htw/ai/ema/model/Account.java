@@ -1,8 +1,9 @@
 package de.htw.ai.ema.model;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Account {
+public class Account implements Serializable {
 
     private LinkedList<Card> cards;
 

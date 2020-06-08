@@ -1,6 +1,8 @@
 package de.htw.ai.ema.model;
 
-public class GameRound {
+import java.io.Serializable;
+
+public class GameRound implements Serializable {
 
     private Cycle currentCycle;
     private int roundNumber;
