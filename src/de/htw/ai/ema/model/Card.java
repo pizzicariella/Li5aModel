@@ -9,7 +9,6 @@ public class Card implements Serializable {
     private String name;
     private boolean li5a;
     private int value;
-    private String imgPath;
 
     public Card(Suit suit, Rank rank){
         this.suit = suit;
@@ -17,15 +16,6 @@ public class Card implements Serializable {
         this.name = suit.name()+rank.name();
         this.li5a = cardIsLi5a();
         this.value = setCardValue();
-        this.imgPath = this.name+".png";
-    }
-
-    public String getImgPath() {
-        return imgPath;
-    }
-
-    public void setImgPath(String imgPath) {
-        this.imgPath = imgPath;
     }
 
     public Suit getSuit() { return suit; }

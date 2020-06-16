@@ -37,16 +37,4 @@ public class CardTest {
         assertTrue("value not set correctly", c2.getValue()==1);
         assertTrue("value not set correctly", c3.getValue()==13);
     }
-
-    @Test
-    public void testImgPath(){
-        assertEquals("imagePath not correct", c1.getImgPath(), "CLUBSACE.png");
-    }
-
-    @Test
-    public void testSetImgPath(){
-        String pathToSet = "resources/"+c1.getImgPath();
-        c1.setImgPath(pathToSet);
-        assertEquals("Path to image not set correctly", pathToSet, c1.getImgPath());
-    }
 }
