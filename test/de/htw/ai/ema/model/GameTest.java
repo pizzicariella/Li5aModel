@@ -24,6 +24,7 @@ public class GameTest {
         assertFalse("over was not set to false", g.isOver());
         assertNotNull("Deck was not initialized", d);
         assertNotNull("GameRound was not initialized", gr);
+        assertNull("name is not null", g.getName());
     }
 
     @Test
@@ -48,5 +49,16 @@ public class GameTest {
         gr.setRoundNumber(44);
         g.setCurrentRound(gr);
         assertTrue("current round not set correctly", g.getCurrentRound().getRoundNumber()==44);
+    }
+
+    @Test
+    public void setName(){
+        players.put("p1", new Player("p1"));
+        players.put("p2", new Player("p2"));
+        players.put("p3", new Player("p3"));
+        players.put("p4", new Player("p4"));
+        Game g = new Game(players);
+        g.setName("gameName");
+        assertEquals("name not set correctly", "gameName", g.getName());
     }
 }

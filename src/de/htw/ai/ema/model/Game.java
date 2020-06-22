@@ -7,6 +7,7 @@ import java.util.Map;
 //TODO eventuell unter Klassen GameRound und Cycle löschen und alles in Game?
 public class Game implements Serializable {
 
+    private String name;
     private Map<String, Player> players;
     private boolean over;
     private GameRound currentRound;
@@ -17,6 +18,14 @@ public class Game implements Serializable {
         this.over = false;
         this.deck = new Deck();
         this.currentRound = new GameRound();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Deck getDeck() {
